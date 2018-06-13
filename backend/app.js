@@ -9,7 +9,8 @@ mongoose.connect('mongodb+srv://brooks:Wbf2467111!@cluster0-tc3tu.mongodb.net/no
 .then(() => {
   console.log("Connected to database!");
 })
-.catch(() => {
+.catch(err => {
+  console.log(err);
   console.log("Connection failed!");
 });
 
